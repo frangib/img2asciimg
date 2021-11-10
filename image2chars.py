@@ -49,9 +49,6 @@ def main():
     img_width = img.size[0]
     img_height = img.size[1]
 
-    # Create a .txt file to contain the image as characters
-    file_chars = open("arnold.txt","w")
-
     # Create a blank image which will contain the characters:
     img2 = 255*np.ones((width, height,1), dtype=np.uint8)
 
@@ -64,11 +61,8 @@ def main():
             org = (i*DELTA,j*DELTA)
             dict_key = math.floor((len(CHARS)-1)*value/255)
             character = CHARS[dict_key]
-            file_chars.write(character)
             img2 = cv2.putText(img2, character, org, FONT, FONTSCALE, COLOR, THICKNESS, cv2.LINE_AA)
         
-        file_chars.write('\n')
-
     # Save the image
     name, extension = FULL_PATH2IMG.split(".")
     cv2.imwrite(name + "_ascii." + extension, img2) 
