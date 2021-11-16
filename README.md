@@ -1,6 +1,7 @@
 # img2asciimg
 Given an image, returns a grayscale version made with characters
 ## Some examples
+💡 Click on the transformed images to open them in a new tab and zoom in.
 ### Original
 ![arnold_avedon](https://user-images.githubusercontent.com/44316116/141107512-076bb04f-e8bd-4a83-b5c4-ca35c3c04d15.jpg)
 
