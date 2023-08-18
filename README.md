@@ -21,6 +21,6 @@ Given an image, returns a grayscale version made with characters
 
 ## How to
 1. Put an image (e.g. myImage.jpeg) in the imgs folder.
-2. Install requirements: ```pip3 -r requirements.txt```
+2. Install requirements: ```pip3 install -r requirements.txt```
 3. Run: ```python3 image2chars.py```.
 4. Find the resulting image in the imgs folder (e.g. as myImage_ascii.jpeg).
